@@ -23,15 +23,16 @@ add_action('enqueue_block_editor_assets', 'loadMyBlockFiles');
   method return null
 */
 
-/*
+
 function borderBoxOutput($props) {
   return '<h3 style="border: 5px solid' . $props['color'] . '">' . $props['content'] . '</h3>';
 }
 
-register_block_type( 'brad/border-box', array(
+// same as first line after registerBlockType
+register_block_type( 'luke-block-exercise/border-box', array(
   'render_callback' => 'borderBoxOutput',
 ) );
-*/
+
 
 /* To Save Post Meta from your block uncomment
   the code below and adjust the post type and

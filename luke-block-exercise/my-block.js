@@ -11,12 +11,11 @@ wp.blocks.registerBlockType('luke-block-exercise/border-box', {
       type: 'string',
     },
     color: {
-      type: 'string'
+      type: 'string',
     },
   },
-  /*eslint-disable */
   // This controls the appearance on the backend
-  edit: function(props) {
+  edit(props) {
     //   Run this function every time there is a change (keystroke)
     function updateContent(event) {
       props.setAttributes({ content: event.target.value });
@@ -28,33 +27,23 @@ wp.blocks.registerBlockType('luke-block-exercise/border-box', {
     }
     // Below uses .jsx syntax. Can be found on babaljs.io
     return React.createElement(
-      "div",
+      'div',
       null,
-      React.createElement("h3", null, "Your Cool Border Box"),
-      "//on every keystroke, update content",
-      React.createElement("input", {
-        type: "text",
+      React.createElement('h3', null, 'Your Cool Border Box'),
+      '//on every keystroke, update content',
+      React.createElement('input', {
+        type: 'text',
         value: props.attributes.content,
-        onChange: updateContent
+        onChange: updateContent,
       }),
-      "// Create Reusable components just like they are HTML",
+      '// Create Reusable components just like they are HTML',
       React.createElement(wp.components.ColorPicker, {
         color: props.attributes.color,
-        onChangeComplete: updateColor
+        onChangeComplete: updateColor,
       })
     );
   }, // controls the interface user seees in WP editing screen
-  save: function(props) {
-    return React.createElement(
-      "h3",
-      {
-        style: {
-          border: "5px solid ".concat(props.attributes.color)
-        }
-      },
-      props.attributes.content
-    );
-  } // controls HTML output user sees when saving
+  save(props) {
+    return null;
+  }, // controls HTML output user sees when saving
 });
-
-/* eslint-enable */
