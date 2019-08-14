@@ -1,0 +1,62 @@
+{
+    "key": "group_5a2a4eeec1d5aag3",
+    "title": "Additional content for categories: graduate study, graduate programs, majors minors",
+    "fields": [
+        {
+            "key": "field_5bc6d0438df08g3",
+            "label": "Degree type name",
+            "name": "degree_type_name",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 50
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "academics_category:majors-minors"
+            }
+        ],
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "academics_category:graduate-programs"
+            }
+        ],
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "academics_category:graduate-study"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "comments",
+        "format"
+    ],
+    "active": 1,
+    "description": "Additional content for categories: graduate study, graduate programs, majors minors; used in flexible modules.",
+    "modified": false
+}

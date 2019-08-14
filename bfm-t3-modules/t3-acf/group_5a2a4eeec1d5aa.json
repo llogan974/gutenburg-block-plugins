@@ -1,0 +1,73 @@
+{
+    "key": "group_5a2a4eeec1d5aa",
+    "title": "Post Content - Student Stories",
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "news_media_category:student-stories"
+            }
+        ],
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "news_media_category:student-outcomes"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": {
+        "1": "excerpt",
+        "2": "comments",
+        "3": "format"
+    },
+    "active": 1,
+    "description": "",
+    "modified": 1565810169,
+    "fields": [
+        {
+            "key": "field_5bc6d0438df08g1",
+            "label": "Class",
+            "name": "class",
+            "type": "text",
+            "instructions": "Content used in \"Student Stories\" module",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Class of 2020 - ",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 50
+        },
+        {
+            "key": "field_5bbc55f29adefa",
+            "label": "Comment",
+            "name": "comment",
+            "type": "textarea",
+            "instructions": "Content used in \"Student Outcomes\" module",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 200,
+            "rows": "",
+            "new_lines": "br"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "key": "group_5a2a4eeec1d5aag4",
+    "title": "Additional content for category: program opportunities",
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "academics_category:program-opportunities"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "comments",
+        "format"
+    ],
+    "active": 1,
+    "description": "Additional content for category: program opportunities; used in flexible modules.",
+    "modified": 1565810195,
+    "fields": [
+        {
+            "key": "field_5bc6d0438df08g4",
+            "label": "Location",
+            "name": "location",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 100
+        },
+        {
+            "key": "field_5bebdcf47a890",
+            "label": "Deadline",
+            "name": "deadline",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "M dS, Y",
+            "return_format": "M dS, Y",
+            "first_day": 1
+        }
+    ]
+}
