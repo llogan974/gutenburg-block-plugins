@@ -11,7 +11,7 @@ wp.blocks.registerBlockType('luke-block-exercise/border-box', {
       type: 'string',
     },
     color: {
-      type: 'string',
+      type: 'string'
     },
   },
   /*eslint-disable */
@@ -45,7 +45,15 @@ wp.blocks.registerBlockType('luke-block-exercise/border-box', {
     );
   }, // controls the interface user seees in WP editing screen
   save: function(props) {
-    return null;
+    return React.createElement(
+      "h3",
+      {
+        style: {
+          border: "5px solid ".concat(props.attributes.color)
+        }
+      },
+      props.attributes.content
+    );
   } // controls HTML output user sees when saving
 });
 
